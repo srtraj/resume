@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:resume_website/screens/widgets/about_me.dart';
 import 'package:resume_website/screens/widgets/developer_image_widget.dart';
 import 'package:resume_website/screens/widgets/playstore_apps.dart';
@@ -32,22 +31,19 @@ class HomeScreen extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                          text: "Portf",
-                          style: GoogleFonts.pacifico(
-                            textStyle: const TextStyle(
+                            text: "Portf",
+                            style: const TextStyle(
+                                fontFamily: "Pacifico-Regular",
                                 fontSize: 50,
                                 color: Colors.black,
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ),
+                                fontWeight: FontWeight.bold)),
                         TextSpan(
                           text: "olio",
-                          style: GoogleFonts.pacifico(
-                            textStyle: const TextStyle(
-                                fontSize: 50,
-                                color: Colors.blue,
-                                fontWeight: FontWeight.bold),
-                          ),
+                          style: const TextStyle(
+                              fontFamily: "Pacifico-Regular",
+                              fontSize: 50,
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -77,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: ht * 0.8, child: const PlayStoreApps())
+            PlayStoreApps()
           ],
         ),
       ),
