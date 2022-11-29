@@ -26,20 +26,20 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15),
               child: Row(
-                children: [
+                children: const [
                   Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
                             text: "Portf",
-                            style: const TextStyle(
+                            style: TextStyle(
                                 fontFamily: "Pacifico-Regular",
                                 fontSize: 50,
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold)),
                         TextSpan(
                           text: "olio",
-                          style: const TextStyle(
+                          style: TextStyle(
                               fontFamily: "Pacifico-Regular",
                               fontSize: 50,
                               color: Colors.blue,
@@ -48,9 +48,9 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Spacer(),
-                  const ActionButtonListWidget(),
-                  const SizedBox(
+                  Spacer(),
+                  ActionButtonListWidget(),
+                  SizedBox(
                     width: 15,
                   ),
                 ],
@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            PlayStoreApps()
+            const PlayStoreApps()
           ],
         ),
       ),

@@ -3,4 +3,6 @@ class Assets {
   Assets._();
 
   static const String assetsDeveloper = 'assets/developer.png';
+  static const String playstorePayGro = 'assets/playstore/payGro.png';
+  static const String playstorePurse = 'assets/playstore/purse.jpg';
 }
